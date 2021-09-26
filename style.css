@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+.wrapper {
+  background-color: #1d2026;
+  min-height: 100vh;
+  width: 100%;
+  color: #fff;
+  position: relative;
+}
+.nav-wrapper {
+  display: flex;
+  padding: 20px 8%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-img {
+  width: 25px;
+  margin-right: 20px;
+}
+
+.logo-img {
+  width: 160px;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav-right ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 32px;
+}
+
+.nav-right ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-right button {
+  background-color: #efefef;
+  height: 30px;
+  width: 60px;
+  border-radius: 30px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #00986f !important;
+}
+
+.active span {
+  background-color: #fff !important;
+  transition: all ease 0.3s;
+  transform: translateX(116%) !important;
+}
+
+.nav-right button span {
+  transition: all ease 0.3s;
+  display: block;
+  background-color: #999;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  margin-left: 2px;
+}
+
+.lamp-wrapper {
+  position: relative;
+  position: absolute;
+  top: -50px;
+  left: 22%;
+  width: 200px;
+}
+
+.lamp {
+  width: 100%;
+}
+
+.light {
+  width: 700px;
+  position: absolute;
+  top: 97%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: -10px;
+  opacity: 0;
+  transition: opacity ease 0.5s;
+}
+
+.light-active {
+  opacity: 1;
+}
+
+.text-wrapper {
+  max-width: 600px;
+  margin-top: 7%;
+  margin-left: 50%;
+}
+
+.text-wrapper h1 {
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 120px;
+}
+.text-wrapper p {
+  font-size: 16px;
+  font-weight: 200;
+  margin: 20px 0;
+  line-height: 30px;
+}
+
+.text-wrapper a {
+  text-decoration: none;
+  background-color: #00986f;
+  padding: 14px 40px;
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 24px;
+}
+
+.control {
+  display: flex;
+  margin-top: 150px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.control .line {
+  width: 250px;
+  height: 4px;
+  background-color: #fff;
+  margin: 0 20px;
+  border-radius: 6px;
+}
+
+.control .line span {
+  width: 50%;
+  height: 8px;
+  margin: -2px;
+  border-radius: 6px 2px 2px 6px;
+  background-color: #00986f;
+  display: block;
+}
